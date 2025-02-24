@@ -289,7 +289,7 @@ const Questions = ({ buttonColors, questionIndex,setScore,buttonState ,setButton
             if (correct){setScore((prevScore: number) => prevScore + 1)}
         }
     }
-
+    // hellow from vs codde fddfdf
     const { id, question, choices } = questions[questionIndex];
 
     return (
@@ -301,8 +301,7 @@ const Questions = ({ buttonColors, questionIndex,setScore,buttonState ,setButton
                       [&_span]:justify-center [&_button]:items-center [&_button]:pr-4 [&_button]:p-1 [&_span]:mr-2 [&_span]:max-h-6 [&_span]:md:max-h-none [&_li]:flex [&_li]:justify-start">
                         {choices.map(({ id, answer, number, correct }) => (
                             <li key={id}>
-                                <button className={`${buttonState && correct ? buttonColors.CORRECT : buttonColors.DEFAULT}
-                                 ${choose === id && !correct && buttonColors.WRONG} text-md md:text-lg`} onClick={() => handleButtonClick(id,correct)}>
+                                <button className={`${buttonState && correct ? buttonColors.CORRECT : (choose === id && !correct) ? buttonColors.WRONG: buttonColors.DEFAULT} text-md md:text-lg`} onClick={() => handleButtonClick(id,correct)}>
                                     <span>{number}</span>{answer}
                                 </button>
                             </li>

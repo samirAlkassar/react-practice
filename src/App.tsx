@@ -1,7 +1,7 @@
 import './index.css'
-import { Theme } from "./components/theme"
-import { BookStore } from './components/bookStore'
-import {Counter} from './components/counter'
+// import { Theme } from "./components/theme"
+// import { BookStore } from './components/bookStore'
+// import {Counter} from './components/counter'
 import { QuizApp } from './components/quizApp'
 
 
