@@ -353,7 +353,7 @@ export const QuizApp = () => {
     }
 
     return (
-        <div className="h-[100vh] w-full bg-[linear-gradient(45deg,tomato,orange,tomato)] font-sans flex justify-center flex-col gap-5 items-center p-4 md:p-0">
+        <div className="h-[100vh] w-full text-white bg-[linear-gradient(45deg,tomato,orange,tomato)] font-sans flex justify-center flex-col gap-5 items-center p-4 md:p-0">
             <h1 className="text-6xl text-slate-900 font-bold">Quiz App</h1>
             <div className="bg-slate-700 md:px-7 md:pt-10 md:pb-8 px-5 pt-6 pb-5 rounded-lg flex flex-col items-end">
 
