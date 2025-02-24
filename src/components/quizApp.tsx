@@ -346,6 +346,11 @@ export const QuizApp = () => {
         "WRONG": "bg-red-400"
     }
 
+    const restartQuiz = () => {
+        setQuestionIndex(0);
+        setScore(0)
+        setFinished(false)
+    }
 
     return (
         <div className="h-[100vh] w-full bg-[linear-gradient(45deg,tomato,orange,tomato)] font-sans flex justify-center flex-col gap-5 items-center p-4 md:p-0">
@@ -355,7 +360,7 @@ export const QuizApp = () => {
                 {finished? 
                 <div className="text-center text-4xl">
                     <h1>Your Final Score is <br/> {score} / {questions.length}</h1>
-                    <button className="bg-emerald-300 text-black rounded-full px-4 py-2 text-lg mt-4">Restart Quize</button>
+                    <button className="bg-emerald-300 text-black rounded-full px-4 py-2 text-lg mt-4" onClick={restartQuiz}>Restart Quize</button>
                     </div>
                  : <Questions buttonColors={buttonColors} questionIndex={questionIndex} setScore={setScore} buttonState={buttonState} setButtonState={setButtonState} />}
                 {!finished && 
