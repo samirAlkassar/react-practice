@@ -19,332 +19,370 @@ type Question = {
     choices: Button[]
 }
 
-const questions: Question[] = [
+const questions_Easy: Question[] = [
     {
         id: 1,
-        question: "ما هو الكوكب الذي يُعرف باسم الكوكب الأحمر؟",
+        question: "ما هو لون السماء في يوم مشمس؟",
         choices: [
-            { id: "q1a", "number": "A", "answer": "الزهرة", "correct": false },
-            { id: "q1b", "number": "B", "answer": "المريخ", "correct": true },
-            { id: "q1c", "number": "C", "answer": "المشتري", "correct": false },
-            { id: "q1d", "number": "D", "answer": "زحل", "correct": false }
+            { id: "q1a", number: "A", answer: "أحمر", correct: false },
+            { id: "q1b", number: "B", answer: "أزرق", correct: true },
+            { id: "q1c", number: "C", answer: "أخضر", correct: false },
+            { id: "q1d", number: "D", answer: "أصفر", correct: false }
         ]
     },
     {
         id: 2,
-        question: "ما هو أسرع حيوان بري في العالم؟",
+        question: "كم عدد الأرجل للقطة؟",
         choices: [
-            { id: "q2a", "number": "A", "answer": "الفهد", "correct": true },
-            { id: "q2b", "number": "B", "answer": "الأسد", "correct": false },
-            { id: "q2c", "number": "C", "answer": "النمر", "correct": false },
-            { id: "q2d", "number": "D", "answer": "الذئب", "correct": false }
+            { id: "q2a", number: "A", answer: "اثنين", correct: false },
+            { id: "q2b", number: "B", answer: "أربعة", correct: true },
+            { id: "q2c", number: "C", answer: "ستة", correct: false },
+            { id: "q2d", number: "D", answer: "ثمانية", correct: false }
         ]
     },
     {
         id: 3,
-        question: "ما هو العنصر الكيميائي الذي يرمز له بالرمز 'O'؟",
+        question: "ما هو اسم صغير الكلب؟",
         choices: [
-            { id: "q3a", "number": "A", "answer": "الهيدروجين", "correct": false },
-            { id: "q3b", "number": "B", "answer": "الأوكسجين", "correct": true },
-            { id: "q3c", "number": "C", "answer": "الكربون", "correct": false },
-            { id: "q3d", "number": "D", "answer": "النيتروجين", "correct": false }
+            { id: "q3a", number: "A", answer: "جرو", correct: true },
+            { id: "q3b", number: "B", answer: "هر", correct: false },
+            { id: "q3c", number: "C", answer: "عجل", correct: false },
+            { id: "q3d", number: "D", answer: "فرخ", correct: false }
         ]
     },
     {
         id: 4,
-        question: "ما هو أطول نهر في العالم؟",
+        question: "ما هو الشيء الذي كلما أخذت منه كبر؟",
         choices: [
-            { id: "q4a", "number": "A", "answer": "نهر النيل", "correct": true },
-            { id: "q4b", "number": "B", "answer": "نهر الأمازون", "correct": false },
-            { id: "q4c", "number": "C", "answer": "نهر اليانغتسي", "correct": false },
-            { id: "q4d", "number": "D", "answer": "نهر المسيسيبي", "correct": false }
+            { id: "q4a", number: "A", answer: "الحفرة", correct: true },
+            { id: "q4b", number: "B", answer: "القلم", correct: false },
+            { id: "q4c", number: "C", answer: "الكتاب", correct: false },
+            { id: "q4d", number: "D", answer: "الكأس", correct: false }
         ]
     },
     {
         id: 5,
-        question: "من هو مخترع المصباح الكهربائي؟",
+        question: "ما هو الشهر الذي يحتوي على 28 يومًا؟",
         choices: [
-            { id: "q5a", "number": "A", "answer": "نيكولا تسلا", "correct": false },
-            { id: "q5b", "number": "B", "answer": "توماس إديسون", "correct": true },
-            { id: "q5c", "number": "C", "answer": "ألبرت أينشتاين", "correct": false },
-            { id: "q5d", "number": "D", "answer": "ألكسندر جراهام بيل", "correct": false }
+            { id: "q5a", number: "A", answer: "فبراير", correct: false },
+            { id: "q5b", number: "B", answer: "كل الشهور", correct: true },
+            { id: "q5c", number: "C", answer: "مارس", correct: false },
+            { id: "q5d", number: "D", answer: "يناير", correct: false }
         ]
     },
     {
         id: 6,
-        question: "كم عدد الكواكب في المجموعة الشمسية؟",
+        question: "ما هو الحيوان الذي يُضرب به المثل في الذكاء؟",
         choices: [
-            { id: "q6a", "number": "A", "answer": "7", "correct": false },
-            { id: "q6b", "number": "B", "answer": "8", "correct": true },
-            { id: "q6c", "number": "C", "answer": "9", "correct": false },
-            { id: "q6d", "number": "D", "answer": "10", "correct": false }
+            { id: "q6a", number: "A", answer: "الثعلب", correct: true },
+            { id: "q6b", number: "B", answer: "الأسد", correct: false },
+            { id: "q6c", number: "C", answer: "القرد", correct: false },
+            { id: "q6d", number: "D", answer: "الببغاء", correct: false }
         ]
     },
     {
         id: 7,
-        question: "من هو أول رئيس للولايات المتحدة الأمريكية؟",
+        question: "ما هو الشيء الذي يسمع بلا أذن ويتكلم بلا لسان؟",
         choices: [
-            { id: "q7a", "number": "A", "answer": "أبراهام لينكولن", "correct": false },
-            { id: "q7b", "number": "B", "answer": "جورج واشنطن", "correct": true },
-            { id: "q7c", "number": "C", "answer": "ثيودور روزفلت", "correct": false },
-            { id: "q7d", "number": "D", "answer": "جون كينيدي", "correct": false }
+            { id: "q7a", number: "A", answer: "الصدى", correct: true },
+            { id: "q7b", number: "B", answer: "الساعة", correct: false },
+            { id: "q7c", number: "C", answer: "التلفاز", correct: false },
+            { id: "q7d", number: "D", answer: "الهاتف", correct: false }
         ]
     },
     {
         id: 8,
-        question: "ما هو الحيوان الذي يُطلق عليه ملك الغابة؟",
+        question: "ما هو الشيء الذي له أسنان ولكنه لا يعض؟",
         choices: [
-            { id: "q8a", "number": "A", "answer": "النمر", "correct": false },
-            { id: "q8b", "number": "B", "answer": "الأسد", "correct": true },
-            { id: "q8c", "number": "C", "answer": "الدب", "correct": false },
-            { id: "q8d", "number": "D", "answer": "الفيل", "correct": false }
+            { id: "q8a", number: "A", answer: "المشط", correct: true },
+            { id: "q8b", number: "B", answer: "الفرشاة", correct: false },
+            { id: "q8c", number: "C", answer: "السلك", correct: false },
+            { id: "q8d", number: "D", answer: "السكين", correct: false }
         ]
     },
     {
         id: 9,
-        question: "ما هو اسم أكبر محيط في العالم؟",
+        question: "ما هو الشيء الذي ينبض دون قلب؟",
         choices: [
-            { id: "q9a", "number": "A", "answer": "المحيط الهندي", "correct": false },
-            { id: "q9b", "number": "B", "answer": "المحيط الأطلسي", "correct": false },
-            { id: "q9c", "number": "C", "answer": "المحيط الهادئ", "correct": true },
-            { id: "q9d", "number": "D", "answer": "المحيط المتجمد الشمالي", "correct": false }
+            { id: "q9a", number: "A", answer: "الساعة", correct: true },
+            { id: "q9b", number: "B", answer: "الهاتف", correct: false },
+            { id: "q9c", number: "C", answer: "الراديو", correct: false },
+            { id: "q9d", number: "D", answer: "الكاميرا", correct: false }
         ]
     },
     {
         id: 10,
-        question: "ما هو العنصر الأكثر وفرة في القشرة الأرضية؟",
+        question: "ما هو الشيء الذي تملكه ولكن يستخدمه الآخرون أكثر منك؟",
         choices: [
-            { id: "q10a", "number": "A", "answer": "الحديد", "correct": false },
-            { id: "q10b", "number": "B", "answer": "الأوكسجين", "correct": true },
-            { id: "q10c", "number": "C", "answer": "السيليكون", "correct": false },
-            { id: "q10d", "number": "D", "answer": "الكربون", "correct": false }
+            { id: "q10a", number: "A", answer: "الاسم", correct: true },
+            { id: "q10b", number: "B", answer: "الهاتف", correct: false },
+            { id: "q10c", number: "C", answer: "السيارة", correct: false },
+            { id: "q10d", number: "D", answer: "الكتاب", correct: false }
         ]
     }
 ]
 
-// const questions: Question[] = [
-//     {
-//         id: 1,
-//         question: "What does HTML stand for?",
-//         choices: [
-//             { id: "q1a", number: "A", answer: "Hyper Trainer Marking Language", correct: false },
-//             { id: "q1b", number: "B", answer: "Hyper Text Markup Language", correct: true },
-//             { id: "q1c", number: "C", answer: "Hyper Transfer Machine Learning", correct: false },
-//             { id: "q1d", number: "D", answer: "High Tech Modern Layout", correct: false }
-//         ]
-//     },
-//     {
-//         id: 2,
-//         question: "Which of the following is NOT a valid HTML tag?",
-//         choices: [
-//             { id: "q2a", number: "A", answer: "<header>", correct: false },
-//             { id: "q2b", number: "B", answer: "<blink>", correct: true },
-//             { id: "q2c", number: "C", answer: "<article>", correct: false },
-//             { id: "q2d", number: "D", answer: "<section>", correct: false }
-//         ]
-//     },
-//     {
-//         id: 3,
-//         question: "What does the `z-index` property in CSS control?",
-//         choices: [
-//             { id: "q3a", number: "A", answer: "The horizontal position of an element", correct: false },
-//             { id: "q3b", number: "B", answer: "The vertical position of an element", correct: false },
-//             { id: "q3c", number: "C", answer: "The stacking order of elements", correct: true },
-//             { id: "q3d", number: "D", answer: "The font size of an element", correct: false }
-//         ]
-//     },
-//     {
-//         id: 4,
-//         question: "What is the purpose of `display: flex;` in CSS?",
-//         choices: [
-//             { id: "q4a", number: "A", answer: "Makes the element invisible", correct: false },
-//             { id: "q4b", number: "B", answer: "Enables flexible box layout for positioning elements", correct: true },
-//             { id: "q4c", number: "C", answer: "Centers an element vertically", correct: false },
-//             { id: "q4d", number: "D", answer: "Changes text color", correct: false }
-//         ]
-//     },
-//     {
-//         id: 5,
-//         question: "Which of the following is NOT a valid way to declare a variable in JavaScript?",
-//         choices: [
-//             { id: "q5a", number: "A", answer: "var x = 10;", correct: false },
-//             { id: "q5b", number: "B", answer: "let x = 10;", correct: false },
-//             { id: "q5c", number: "C", answer: "const x = 10;", correct: false },
-//             { id: "q5d", number: "D", answer: "define x = 10;", correct: true }
-//         ]
-//     },
-//     {
-//         id: 6,
-//         question: "What does `===` do in JavaScript?",
-//         choices: [
-//             { id: "q6a", number: "A", answer: "Checks for value equality only", correct: false },
-//             { id: "q6b", number: "B", answer: "Checks for both value and type equality", correct: true },
-//             { id: "q6c", number: "C", answer: "Assigns a value", correct: false },
-//             { id: "q6d", number: "D", answer: "Compares only numbers", correct: false }
-//         ]
-//     },
-//     {
-//         id: 7,
-//         question: "What is the purpose of the `useEffect` hook in React?",
-//         choices: [
-//             { id: "q7a", number: "A", answer: "To fetch data and perform side effects", correct: true },
-//             { id: "q7b", number: "B", answer: "To create components", correct: false },
-//             { id: "q7c", number: "C", answer: "To update the UI immediately", correct: false },
-//             { id: "q7d", number: "D", answer: "To replace `useState`", correct: false }
-//         ]
-//     },
-//     {
-//         id: 8,
-//         question: "What does JSX stand for?",
-//         choices: [
-//             { id: "q8a", number: "A", answer: "JavaScript XML", correct: true },
-//             { id: "q8b", number: "B", answer: "Java Syntax Extension", correct: false },
-//             { id: "q8c", number: "C", answer: "JavaScript Extended", correct: false },
-//             { id: "q8d", number: "D", answer: "JSON XML", correct: false }
-//         ]
-//     },
-//     {
-//         id: 9,
-//         question: "Which of the following is NOT a React hook?",
-//         choices: [
-//             { id: "q9a", number: "A", answer: "useState", correct: false },
-//             { id: "q9b", number: "B", answer: "useEffect", correct: false },
-//             { id: "q9c", number: "C", answer: "useRender", correct: true },
-//             { id: "q9d", number: "D", answer: "useRef", correct: false }
-//         ]
-//     },
-//     {
-//         id: 10,
-//         question: "What does `event.preventDefault()` do in JavaScript?",
-//         choices: [
-//             { id: "q10a", number: "A", answer: "Stops the default behavior of an event", correct: true },
-//             { id: "q10b", number: "B", answer: "Deletes an event", correct: false },
-//             { id: "q10c", number: "C", answer: "Prevents a JavaScript error", correct: false },
-//             { id: "q10d", number: "D", answer: "Creates a new event", correct: false }
-//         ]
-//     }
-// ];
+const questions_Medium: Question[] = [
+    {
+        id: 1,
+        question: "ما هو العنصر الكيميائي الذي يرمز له بالرمز 'O'؟",
+        choices: [
+            { id: "q1a", number: "A", answer: "ذهب", correct: false },
+            { id: "q1b", number: "B", answer: "أكسجين", correct: true },
+            { id: "q1c", number: "C", answer: "فضة", correct: false },
+            { id: "q1d", number: "D", answer: "حديد", correct: false }
+        ]
+    },
+    {
+        id: 2,
+        question: "من هو مؤلف رواية 'البؤساء'؟",
+        choices: [
+            { id: "q2a", number: "A", answer: "فيكتور هوغو", correct: true },
+            { id: "q2b", number: "B", answer: "تشارلز ديكنز", correct: false },
+            { id: "q2c", number: "C", answer: "دوستويفسكي", correct: false },
+            { id: "q2d", number: "D", answer: "نجيب محفوظ", correct: false }
+        ]
+    },
+    {
+        id: 3,
+        question: "ما هو الكوكب الأقرب إلى الشمس؟",
+        choices: [
+            { id: "q3a", number: "A", answer: "الزهرة", correct: false },
+            { id: "q3b", number: "B", answer: "عطارد", correct: true },
+            { id: "q3c", number: "C", answer: "الأرض", correct: false },
+            { id: "q3d", number: "D", answer: "المريخ", correct: false }
+        ]
+    },
+    {
+        id: 4,
+        question: "ما هو العدد الأولي من بين الأعداد التالية؟",
+        choices: [
+            { id: "q4a", number: "A", answer: "15", correct: false },
+            { id: "q4b", number: "B", answer: "19", correct: true },
+            { id: "q4c", number: "C", answer: "21", correct: false },
+            { id: "q4d", number: "D", answer: "25", correct: false }
+        ]
+    },
+    {
+        id: 5,
+        question: "في أي عام حدثت الحرب العالمية الثانية؟",
+        choices: [
+            { id: "q5a", number: "A", answer: "1939", correct: true },
+            { id: "q5b", number: "B", answer: "1914", correct: false },
+            { id: "q5c", number: "C", answer: "1945", correct: false },
+            { id: "q5d", number: "D", answer: "1950", correct: false }
+        ]
+    },
+    {
+        id: 6,
+        question: "ما هو البحر الذي يحيط بالمملكة العربية السعودية من الغرب؟",
+        choices: [
+            { id: "q6a", number: "A", answer: "البحر الأسود", correct: false },
+            { id: "q6b", number: "B", answer: "المحيط الأطلسي", correct: false },
+            { id: "q6c", number: "C", answer: "البحر الأحمر", correct: true },
+            { id: "q6d", number: "D", answer: "بحر العرب", correct: false }
+        ]
+    },
+    {
+        id: 7,
+        question: "كم عدد الأضلاع في الشكل السداسي؟",
+        choices: [
+            { id: "q7a", number: "A", answer: "4", correct: false },
+            { id: "q7b", number: "B", answer: "5", correct: false },
+            { id: "q7c", number: "C", answer: "6", correct: true },
+            { id: "q7d", number: "D", answer: "8", correct: false }
+        ]
+    },
+    {
+        id: 8,
+        question: "ما هو العضو المسؤول عن ضخ الدم في جسم الإنسان؟",
+        choices: [
+            { id: "q8a", number: "A", answer: "الكبد", correct: false },
+            { id: "q8b", number: "B", answer: "الرئتان", correct: false },
+            { id: "q8c", number: "C", answer: "القلب", correct: true },
+            { id: "q8d", number: "D", answer: "المعدة", correct: false }
+        ]
+    },
+    {
+        id: 9,
+        question: "ما هو الاسم العلمي للماء؟",
+        choices: [
+            { id: "q9a", number: "A", answer: "H2O", correct: true },
+            { id: "q9b", number: "B", answer: "CO2", correct: false },
+            { id: "q9c", number: "C", answer: "O2", correct: false },
+            { id: "q9d", number: "D", answer: "NaCl", correct: false }
+        ]
+    },
+    {
+        id: 10,
+        question: "ما هو أكبر كوكب في المجموعة الشمسية؟",
+        choices: [
+            { id: "q10a", number: "A", answer: "المريخ", correct: false },
+            { id: "q10b", number: "B", answer: "زحل", correct: false },
+            { id: "q10c", number: "C", answer: "المشتري", correct: true },
+            { id: "q10d", number: "D", answer: "الأرض", correct: false }
+        ]
+    }
+];
 
-// const questions: Question[] = [
-//     {
-//         id: 1,
-//         question: "ما هو العنصر الكيميائي الأكثر وفرة في الكون؟",
-//         choices: [
-//             { id: "q1a", number: "A", answer: "الأكسجين", correct: false },
-//             { id: "q1b", number: "B", answer: "الهيدروجين", correct: true },
-//             { id: "q1c", number: "C", answer: "الكربون", correct: false },
-//             { id: "q1d", number: "D", answer: "النيتروجين", correct: false }
-//         ]
-//     },
-//     {
-//         id: 2,
-//         question: "أي من الكواكب التالية يمتلك أكبر عدد من الأقمار؟",
-//         choices: [
-//             { id: "q2a", number: "A", answer: "المشتري", correct: true },
-//             { id: "q2b", number: "B", answer: "زحل", correct: false },
-//             { id: "q2c", number: "C", answer: "أورانوس", correct: false },
-//             { id: "q2d", number: "D", answer: "نبتون", correct: false }
-//         ]
-//     },
-//     {
-//         id: 3,
-//         question: "أي معدن يُعتبر الأفضل في توصيل الكهرباء؟",
-//         choices: [
-//             { id: "q3a", number: "A", answer: "النحاس", correct: false },
-//             { id: "q3b", number: "B", answer: "الألومنيوم", correct: false },
-//             { id: "q3c", number: "C", answer: "الذهب", correct: false },
-//             { id: "q3d", number: "D", answer: "الفضة", correct: true }
-//         ]
-//     },
-//     {
-//         id: 4,
-//         question: "أي من الحيوانات التالية يمكنه العيش لأطول فترة دون ماء؟",
-//         choices: [
-//             { id: "q4a", number: "A", answer: "الجمل", correct: false },
-//             { id: "q4b", number: "B", answer: "السلحفاة", correct: false },
-//             { id: "q4c", number: "C", answer: "الجرذ الكنغري", correct: true },
-//             { id: "q4d", number: "D", answer: "الثعبان", correct: false }
-//         ]
-//     },
-//     {
-//         id: 5,
-//         question: "ما هو العضو الوحيد في جسم الإنسان الذي يمكنه التجدد تمامًا؟",
-//         choices: [
-//             { id: "q5a", number: "A", answer: "الكبد", correct: true },
-//             { id: "q5b", number: "B", answer: "القلب", correct: false },
-//             { id: "q5c", number: "C", answer: "الرئتان", correct: false },
-//             { id: "q5d", number: "D", answer: "الدماغ", correct: false }
-//         ]
-//     },
-//     {
-//         id: 6,
-//         question: "ما هي الدولة التي لديها أكبر عدد من البراكين النشطة؟",
-//         choices: [
-//             { id: "q6a", number: "A", answer: "اليابان", correct: false },
-//             { id: "q6b", number: "B", answer: "إندونيسيا", correct: true },
-//             { id: "q6c", number: "C", answer: "الولايات المتحدة", correct: false },
-//             { id: "q6d", number: "D", answer: "إيطاليا", correct: false }
-//         ]
-//     },
-//     {
-//         id: 7,
-//         question: "ما هو أسرع حيوان على وجه الأرض؟",
-//         choices: [
-//             { id: "q7a", number: "A", answer: "الفهد", correct: false },
-//             { id: "q7b", number: "B", answer: "صقر الشاهين", correct: true },
-//             { id: "q7c", number: "C", answer: "الغزال", correct: false },
-//             { id: "q7d", number: "D", answer: "الأرنب البري", correct: false }
-//         ]
-//     },
-//     {
-//         id: 8,
-//         question: "أي من المحيطات هو الأعمق في العالم؟",
-//         choices: [
-//             { id: "q8a", number: "A", answer: "المحيط الأطلسي", correct: false },
-//             { id: "q8b", number: "B", answer: "المحيط الهندي", correct: false },
-//             { id: "q8c", number: "C", answer: "المحيط الهادئ", correct: true },
-//             { id: "q8d", number: "D", answer: "المحيط المتجمد الشمالي", correct: false }
-//         ]
-//     },
-//     {
-//         id: 9,
-//         question: "ما هو الحيوان الذي يمتلك أقوى عضة بين جميع الحيوانات؟",
-//         choices: [
-//             { id: "q9a", number: "A", answer: "التمساح", correct: true },
-//             { id: "q9b", number: "B", answer: "القرش الأبيض", correct: false },
-//             { id: "q9c", number: "C", answer: "الأسد", correct: false },
-//             { id: "q9d", number: "D", answer: "الدب البني", correct: false }
-//         ]
-//     },
-//     {
-//         id: 10,
-//         question: "ما هو أقوى عظم في جسم الإنسان؟",
-//         choices: [
-//             { id: "q10a", number: "A", answer: "الجمجمة", correct: false },
-//             { id: "q10b", number: "B", answer: "الفخذ", correct: true },
-//             { id: "q10c", number: "C", answer: "العمود الفقري", correct: false },
-//             { id: "q10d", number: "D", answer: "عظم الكتف", correct: false }
-//         ]
-//     }
-// ];
+
+const questions_Hard: Question[] = [
+    {
+        id: 1,
+        question: "ما هو الاسم العلمي لعملية تكوين الجبال نتيجة اصطدام الصفائح التكتونية؟",
+        choices: [
+            { id: "q1a", number: "A", answer: "التعرية", correct: false },
+            { id: "q1b", number: "B", answer: "الأوروجينيز", correct: true },
+            { id: "q1c", number: "C", answer: "التصحر", correct: false },
+            { id: "q1d", number: "D", answer: "الانجراف القاري", correct: false }
+        ]
+    },
+    {
+        id: 2,
+        question: "ما هو العدد الذري لعنصر اليورانيوم؟",
+        choices: [
+            { id: "q2a", number: "A", answer: "82", correct: false },
+            { id: "q2b", number: "B", answer: "92", correct: true },
+            { id: "q2c", number: "C", answer: "94", correct: false },
+            { id: "q2d", number: "D", answer: "96", correct: false }
+        ]
+    },
+    {
+        id: 3,
+        question: "أي من النظريات التالية تفسر أصل الكون؟",
+        choices: [
+            { id: "q3a", number: "A", answer: "نظرية الأوتار", correct: false },
+            { id: "q3b", number: "B", answer: "نظرية الانفجار العظيم", correct: true },
+            { id: "q3c", number: "C", answer: "نظرية التطور", correct: false },
+            { id: "q3d", number: "D", answer: "ميكانيكا الكم", correct: false }
+        ]
+    },
+    {
+        id: 4,
+        question: "ما هو العضو الذي يُطلق عليه لقب 'مركز الذاكرة' في الدماغ البشري؟",
+        choices: [
+            { id: "q4a", number: "A", answer: "المخيخ", correct: false },
+            { id: "q4b", number: "B", answer: "اللوزة الدماغية", correct: false },
+            { id: "q4c", number: "C", answer: "قرن آمون (الحُصين)", correct: true },
+            { id: "q4d", number: "D", answer: "النخاع المستطيل", correct: false }
+        ]
+    },
+    {
+        id: 5,
+        question: "من هو الفيزيائي الذي وضع معادلة الموجة في ميكانيكا الكم؟",
+        choices: [
+            { id: "q5a", number: "A", answer: "ألبرت أينشتاين", correct: false },
+            { id: "q5b", number: "B", answer: "ماكس بلانك", correct: false },
+            { id: "q5c", number: "C", answer: "إرفين شرودنغر", correct: true },
+            { id: "q5d", number: "D", answer: "نيلز بور", correct: false }
+        ]
+    },
+    {
+        id: 6,
+        question: "ما هو أعلى جبل في النظام الشمسي؟",
+        choices: [
+            { id: "q6a", number: "A", answer: "جبل إيفرست", correct: false },
+            { id: "q6b", number: "B", answer: "جبل مونا كيا", correct: false },
+            { id: "q6c", number: "C", answer: "أوليمبوس مونس", correct: true },
+            { id: "q6d", number: "D", answer: "ماونا لوا", correct: false }
+        ]
+    },
+    {
+        id: 7,
+        question: "ما هو الاسم الذي يطلق على دراسة تأثير القوى على السوائل المتحركة؟",
+        choices: [
+            { id: "q7a", number: "A", answer: "الديناميكا الهوائية", correct: false },
+            { id: "q7b", number: "B", answer: "الديناميكا الحرارية", correct: false },
+            { id: "q7c", number: "C", answer: "الهيدروديناميكا", correct: true },
+            { id: "q7d", number: "D", answer: "الميكانيكا الكلاسيكية", correct: false }
+        ]
+    },
+    {
+        id: 8,
+        question: "ما هو أول عنصر تم اكتشافه بواسطة التحليل الطيفي؟",
+        choices: [
+            { id: "q8a", number: "A", answer: "الهيدروجين", correct: false },
+            { id: "q8b", number: "B", answer: "الهيليوم", correct: true },
+            { id: "q8c", number: "C", answer: "النيون", correct: false },
+            { id: "q8d", number: "D", answer: "الأكسجين", correct: false }
+        ]
+    },
+    {
+        id: 9,
+        question: "ما هو القانون الفيزيائي الذي ينص على أن لكل فعل رد فعل مساوٍ له في المقدار ومعاكس له في الاتجاه؟",
+        choices: [
+            { id: "q9a", number: "A", answer: "قانون حفظ الطاقة", correct: false },
+            { id: "q9b", number: "B", answer: "قانون نيوتن الثالث", correct: true },
+            { id: "q9c", number: "C", answer: "قانون الجاذبية", correct: false },
+            { id: "q9d", number: "D", answer: "قانون الشغل والطاقة", correct: false }
+        ]
+    },
+    {
+        id: 10,
+        question: "ما هو المصطلح الذي يطلق على المادة التي لا يمكن أن تمر عبرها الإلكترونات بحرية؟",
+        choices: [
+            { id: "q10a", number: "A", answer: "الموصل", correct: false },
+            { id: "q10b", number: "B", answer: "العازل", correct: true },
+            { id: "q10c", number: "C", answer: "شبه الموصل", correct: false },
+            { id: "q10d", number: "D", answer: "الموصل الفائق", correct: false }
+        ]
+    }
+];
+
+
+const questionsDefecutity: any = {
+    "Easy": questions_Easy,
+    "Medium": questions_Medium,
+    "Hard":questions_Hard
+}
 
 export const QuizApp = () => {
+    const [defecultiy, setDificulty] = useState<string>("");
+    const [selected, setSelected] = useState<boolean>(false);
+
+    const handleDefecultySelection = (DEFECULITY: string) => {
+        setDificulty(DEFECULITY);
+        setSelected(true)
+    }
+
+    return (
+        <div className="h-[100vh] w-full text-white bg-[linear-gradient(45deg,tomato,orange,tomato)] font-sans flex justify-center flex-col gap-5 items-center p-4 md:p-0">
+            <h1 className="text-6xl text-slate-900 font-bold">Quiz App</h1>
+            {selected? <Quiz defecultiy={defecultiy} />: 
+            <div className="flex flex-col items-center justify-center">
+                <DefecultyButton onClick={()=>handleDefecultySelection("Easy")}>Easy</DefecultyButton>
+                <DefecultyButton onClick={()=>handleDefecultySelection("Medium")}>Medium</DefecultyButton>
+                <DefecultyButton onClick={()=>handleDefecultySelection("Hard")}>Hard</DefecultyButton>
+            </div> }
+        </div>
+    )
+}
+
+const DefecultyButton = ({children, onClick}:{children?: React.ReactNode, onClick?: any}) => {
+    return (
+        <button onClick={onClick} className="text-black bg-slate-200 rounded-full w-52 py-3 mb-3 shadow-md border border-slate-300 active:scale-95">{children}</button>
+    )
+}
+
+const Quiz = ({defecultiy}:{defecultiy:string}) => {
     const [questionIndex, setQuestionIndex] = useState<number>(0);
     const [score, setScore] = useState<number>(0);
     const [finished, setFinished] = useState<boolean>(false);
     const [buttonState, setButtonState] = useState<boolean>(false);
-
-    const handleNextQuestion = () => {
-        if (!buttonState) {return}
-        if ((questionIndex === questions.length - 1)) { setFinished(true); return}
-        else { setQuestionIndex(questionIndex + 1) }
-    }
 
     const buttonColors: backgroundColors = {
         "DEFAULT": "bg-slate-200",
         "CORRECT": "bg-emerald-400",
         "WRONG": "bg-red-400"
     }
+    
+    const handleNextQuestion = () => {
+        if (!buttonState) { return }
+        if ((questionIndex === (questionsDefecutity[defecultiy]).length - 1)) { setFinished(true); return }
+        else { setQuestionIndex(questionIndex + 1) }
+    }
+
+
 
     const restartQuiz = () => {
         setQuestionIndex(0);
@@ -353,29 +391,26 @@ export const QuizApp = () => {
     }
 
     return (
-        <div className="h-[100vh] w-full text-white bg-[linear-gradient(45deg,tomato,orange,tomato)] font-sans flex justify-center flex-col gap-5 items-center p-4 md:p-0">
-            <h1 className="text-6xl text-slate-900 font-bold">Quiz App</h1>
+        <>
             <div className="bg-slate-700 md:px-7 md:pt-10 md:pb-8 px-5 pt-6 pb-5 rounded-lg flex flex-col items-end">
 
-                {finished? 
-                <div className="text-center text-4xl">
-                    <h1>Your Final Score is <br/> {score} / {questions.length}</h1>
-                    <button className="bg-emerald-300 text-black rounded-full px-4 py-2 text-lg mt-4" onClick={restartQuiz}>Restart Quize</button>
+                {finished ?
+                    <div className="text-center text-4xl">
+                        <h1>Your Final Score is <br /> {score} / {questionsDefecutity[defecultiy].length}</h1>
+                        <button className="bg-emerald-300 text-black rounded-full px-4 py-2 text-lg mt-4" onClick={restartQuiz}>Restart Quize</button>
                     </div>
-                 : <Questions buttonColors={buttonColors} questionIndex={questionIndex} setScore={setScore} buttonState={buttonState} setButtonState={setButtonState} />}
-                {!finished && 
-                <div className="flex justify-between items-center w-full pl-2 -mb-3">
-                    <div className="pt-2">{questionIndex + 1} / {questions.length}</div>
-                    <button className="text-xl pr-2 pl-4 pb-2 pt-4 active:scale-95" onClick={handleNextQuestion}>{questionIndex === questions.length - 1 ? "Finsh" : "Next"}</button>
-                </div>}
+                    : <Questions defecultiy={defecultiy} buttonColors={buttonColors} questionIndex={questionIndex} setScore={setScore} buttonState={buttonState} setButtonState={setButtonState} />}
+                {!finished &&
+                    <div className="flex justify-between items-center w-full pl-2 -mb-3">
+                        <div className="pt-2">{questionIndex + 1} / {questionsDefecutity[defecultiy].length}</div>
+                        <button className="text-xl pr-2 pl-4 pb-2 pt-4 active:scale-95" onClick={handleNextQuestion}>{questionIndex === questionsDefecutity[defecultiy].length - 1 ? "Finsh" : "Next"}</button>
+                    </div>}
             </div>
-        </div>
+        </>
     )
 }
 
-
-
-const Questions = ({ buttonColors, questionIndex,setScore,buttonState ,setButtonState }: { buttonColors: backgroundColors, questionIndex: number,setScore: any, buttonState: boolean, setButtonState: any}) => {
+const Questions = ({ buttonColors, questionIndex, setScore, buttonState, setButtonState,defecultiy }: {defecultiy:string, buttonColors: backgroundColors, questionIndex: number, setScore: any, buttonState: boolean, setButtonState: any }) => {
     const [choose, setChoose] = useState<string | null>(null);
 
 
@@ -383,35 +418,35 @@ const Questions = ({ buttonColors, questionIndex,setScore,buttonState ,setButton
         setButtonState(false)
     }, [questionIndex])
 
-    const handleButtonClick = (buttonID: string,correct:boolean) => {
+    const handleButtonClick = (buttonID: string, correct: boolean) => {
         if (!buttonState) {
             setButtonState(true)
             if (choose === buttonID) {
                 setChoose(null)
             } else { setChoose(buttonID) }
-            if (correct){setScore((prevScore: number) => prevScore + 1)}
+            if (correct) { setScore((prevScore: number) => prevScore + 1) }
         }
     }
 
-    const { id, question, choices } = questions[questionIndex];
+    const { id, question, choices } = questionsDefecutity[defecultiy][questionIndex];
 
     return (
         <>
-                <div key={id}>
-                    <h3 className="mb-5 text-xl md:text-2xl max-w-[60ch]">{id}- {question}</h3>
-                    <ul className="grid grid-cols-[auto_auto] gap-5 [&_button]:rounded-full [&_button]:text-black [&_span]:bg-blue-300 [&_span]:rounded-full
+            <div key={id}>
+                <h3 className="mb-5 text-xl md:text-2xl max-w-[60ch]">{id}- {question}</h3>
+                <ul className="grid grid-cols-[auto_auto] gap-5 [&_button]:rounded-full [&_button]:text-black [&_span]:bg-blue-300 [&_span]:rounded-full
                      [&_button]:flex [&_span]:w-8 [&_span]:h-8 [&_span]:flex [&_span]:items-center
                       [&_span]:justify-center [&_button]:items-center [&_button]:pr-4 [&_button]:p-1 [&_span]:mr-2 [&_span]:max-h-6 [&_span]:md:max-h-none [&_li]:flex [&_li]:justify-start">
-                        {choices.map(({ id, answer, number, correct }) => (
-                            <li key={id}>
-                                <button className={`${buttonState && correct ? buttonColors.CORRECT : (choose === id && !correct) ? buttonColors.WRONG: buttonColors.DEFAULT} text-md md:text-lg`} onClick={() => handleButtonClick(id,correct)}>
-                                    <span>{number}</span>{answer}
-                                </button>
-                            </li>
+                    {choices.map(({ id, answer, number, correct }:any) => (
+                        <li key={id}>
+                            <button className={`${buttonState && correct ? buttonColors.CORRECT : (choose === id && !correct) ? buttonColors.WRONG : buttonColors.DEFAULT} text-md md:text-lg`} onClick={() => handleButtonClick(id, correct)}>
+                                <span>{number}</span>{answer}
+                            </button>
+                        </li>
 
-                        ))}
-                    </ul>
-                </div>
+                    ))}
+                </ul>
+            </div>
         </>
     )
 } 
