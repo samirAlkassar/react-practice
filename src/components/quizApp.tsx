@@ -388,6 +388,8 @@ const Quiz = ({defecultiy}:{defecultiy:string}) => {
         setQuestionIndex(0);
         setScore(0)
         setFinished(false)
+        setSelected(false)
+        setDificulty("")
     }
 
     return (
