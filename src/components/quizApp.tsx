@@ -346,11 +346,7 @@ export const QuizApp = () => {
         "WRONG": "bg-red-400"
     }
 
-    const restartQuiz = () => {
-        setQuestionIndex(0);
-        setScore(0)
-        setFinished(false)
-    }
+لب
 
     return (
         <div className="h-[100vh] w-full bg-[linear-gradient(45deg,tomato,orange,tomato)] font-sans flex justify-center flex-col gap-5 items-center p-4 md:p-0">
