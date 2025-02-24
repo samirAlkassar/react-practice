@@ -19,108 +19,109 @@ type Question = {
     choices: Button[]
 }
 
-const questions: Question[] = [
-    {
-        id: 1,
-        question: "ما هو الكوكب الذي يُعرف باسم الكوكب الأحمر؟",
-        choices: [
-            { id: "q1a", "number": "A", "answer": "الزهرة", "correct": false },
-            { id: "q1b", "number": "B", "answer": "المريخ", "correct": true },
-            { id: "q1c", "number": "C", "answer": "المشتري", "correct": false },
-            { id: "q1d", "number": "D", "answer": "زحل", "correct": false }
-        ]
-    },
-    {
-        id: 2,
-        question: "ما هو أسرع حيوان بري في العالم؟",
-        choices: [
-            { id: "q2a", "number": "A", "answer": "الفهد", "correct": true },
-            { id: "q2b", "number": "B", "answer": "الأسد", "correct": false },
-            { id: "q2c", "number": "C", "answer": "النمر", "correct": false },
-            { id: "q2d", "number": "D", "answer": "الذئب", "correct": false }
-        ]
-    },
-    {
-        id: 3,
-        question: "ما هو العنصر الكيميائي الذي يرمز له بالرمز 'O'؟",
-        choices: [
-            { id: "q3a", "number": "A", "answer": "الهيدروجين", "correct": false },
-            { id: "q3b", "number": "B", "answer": "الأوكسجين", "correct": true },
-            { id: "q3c", "number": "C", "answer": "الكربون", "correct": false },
-            { id: "q3d", "number": "D", "answer": "النيتروجين", "correct": false }
-        ]
-    },
-    {
-        id: 4,
-        question: "ما هو أطول نهر في العالم؟",
-        choices: [
-            { id: "q4a", "number": "A", "answer": "نهر النيل", "correct": true },
-            { id: "q4b", "number": "B", "answer": "نهر الأمازون", "correct": false },
-            { id: "q4c", "number": "C", "answer": "نهر اليانغتسي", "correct": false },
-            { id: "q4d", "number": "D", "answer": "نهر المسيسيبي", "correct": false }
-        ]
-    },
-    {
-        id: 5,
-        question: "من هو مخترع المصباح الكهربائي؟",
-        choices: [
-            { id: "q5a", "number": "A", "answer": "نيكولا تسلا", "correct": false },
-            { id: "q5b", "number": "B", "answer": "توماس إديسون", "correct": true },
-            { id: "q5c", "number": "C", "answer": "ألبرت أينشتاين", "correct": false },
-            { id: "q5d", "number": "D", "answer": "ألكسندر جراهام بيل", "correct": false }
-        ]
-    },
-    {
-        id: 6,
-        question: "كم عدد الكواكب في المجموعة الشمسية؟",
-        choices: [
-            { id: "q6a", "number": "A", "answer": "7", "correct": false },
-            { id: "q6b", "number": "B", "answer": "8", "correct": true },
-            { id: "q6c", "number": "C", "answer": "9", "correct": false },
-            { id: "q6d", "number": "D", "answer": "10", "correct": false }
-        ]
-    },
-    {
-        id: 7,
-        question: "من هو أول رئيس للولايات المتحدة الأمريكية؟",
-        choices: [
-            { id: "q7a", "number": "A", "answer": "أبراهام لينكولن", "correct": false },
-            { id: "q7b", "number": "B", "answer": "جورج واشنطن", "correct": true },
-            { id: "q7c", "number": "C", "answer": "ثيودور روزفلت", "correct": false },
-            { id: "q7d", "number": "D", "answer": "جون كينيدي", "correct": false }
-        ]
-    },
-    {
-        id: 8,
-        question: "ما هو الحيوان الذي يُطلق عليه ملك الغابة؟",
-        choices: [
-            { id: "q8a", "number": "A", "answer": "النمر", "correct": false },
-            { id: "q8b", "number": "B", "answer": "الأسد", "correct": true },
-            { id: "q8c", "number": "C", "answer": "الدب", "correct": false },
-            { id: "q8d", "number": "D", "answer": "الفيل", "correct": false }
-        ]
-    },
-    {
-        id: 9,
-        question: "ما هو اسم أكبر محيط في العالم؟",
-        choices: [
-            { id: "q9a", "number": "A", "answer": "المحيط الهندي", "correct": false },
-            { id: "q9b", "number": "B", "answer": "المحيط الأطلسي", "correct": false },
-            { id: "q9c", "number": "C", "answer": "المحيط الهادئ", "correct": true },
-            { id: "q9d", "number": "D", "answer": "المحيط المتجمد الشمالي", "correct": false }
-        ]
-    },
-    {
-        id: 10,
-        question: "ما هو العنصر الأكثر وفرة في القشرة الأرضية؟",
-        choices: [
-            { id: "q10a", "number": "A", "answer": "الحديد", "correct": false },
-            { id: "q10b", "number": "B", "answer": "الأوكسجين", "correct": true },
-            { id: "q10c", "number": "C", "answer": "السيليكون", "correct": false },
-            { id: "q10d", "number": "D", "answer": "الكربون", "correct": false }
-        ]
-    }
-]
+// const questions: Question[] = [
+//     {
+//         id: 1,
+//         question: "ما هو الكوكب الذي يُعرف باسم الكوكب الأحمر؟",
+//         choices: [
+//             { id: "q1a", "number": "A", "answer": "الزهرة", "correct": false },
+//             { id: "q1b", "number": "B", "answer": "المريخ", "correct": true },
+//             { id: "q1c", "number": "C", "answer": "المشتري", "correct": false },
+//             { id: "q1d", "number": "D", "answer": "زحل", "correct": false }
+//         ]
+//     },
+//     {
+//         id: 2,
+//         question: "ما هو أسرع حيوان بري في العالم؟",
+//         choices: [
+//             { id: "q2a", "number": "A", "answer": "الفهد", "correct": true },
+//             { id: "q2b", "number": "B", "answer": "الأسد", "correct": false },
+//             { id: "q2c", "number": "C", "answer": "النمر", "correct": false },
+//             { id: "q2d", "number": "D", "answer": "الذئب", "correct": false }
+//         ]
+//     },
+//     {
+//         id: 3,
+//         question: "ما هو العنصر الكيميائي الذي يرمز له بالرمز 'O'؟",
+//         choices: [
+//             { id: "q3a", "number": "A", "answer": "الهيدروجين", "correct": false },
+//             { id: "q3b", "number": "B", "answer": "الأوكسجين", "correct": true },
+//             { id: "q3c", "number": "C", "answer": "الكربون", "correct": false },
+//             { id: "q3d", "number": "D", "answer": "النيتروجين", "correct": false }
+//         ]
+//     },
+//     {
+//         id: 4,
+//         question: "ما هو أطول نهر في العالم؟",
+//         choices: [
+//             { id: "q4a", "number": "A", "answer": "نهر النيل", "correct": true },
+//             { id: "q4b", "number": "B", "answer": "نهر الأمازون", "correct": false },
+//             { id: "q4c", "number": "C", "answer": "نهر اليانغتسي", "correct": false },
+//             { id: "q4d", "number": "D", "answer": "نهر المسيسيبي", "correct": false }
+//         ]
+//     },
+//     {
+//         id: 5,
+//         question: "من هو مخترع المصباح الكهربائي؟",
+//         choices: [
+//             { id: "q5a", "number": "A", "answer": "نيكولا تسلا", "correct": false },
+//             { id: "q5b", "number": "B", "answer": "توماس إديسون", "correct": true },
+//             { id: "q5c", "number": "C", "answer": "ألبرت أينشتاين", "correct": false },
+//             { id: "q5d", "number": "D", "answer": "ألكسندر جراهام بيل", "correct": false }
+//         ]
+//     },
+//     {
+//         id: 6,
+//         question: "كم عدد الكواكب في المجموعة الشمسية؟",
+//         choices: [
+//             { id: "q6a", "number": "A", "answer": "7", "correct": false },
+//             { id: "q6b", "number": "B", "answer": "8", "correct": true },
+//             { id: "q6c", "number": "C", "answer": "9", "correct": false },
+//             { id: "q6d", "number": "D", "answer": "10", "correct": false }
+//         ]
+//     },
+//     {
+//         id: 7,
+//         question: "من هو أول رئيس للولايات المتحدة الأمريكية؟",
+//         choices: [
+//             { id: "q7a", "number": "A", "answer": "أبراهام لينكولن", "correct": false },
+//             { id: "q7b", "number": "B", "answer": "جورج واشنطن", "correct": true },
+//             { id: "q7c", "number": "C", "answer": "ثيودور روزفلت", "correct": false },
+//             { id: "q7d", "number": "D", "answer": "جون كينيدي", "correct": false }
+//         ]
+//     },
+//     {
+//         id: 8,
+//         question: "ما هو الحيوان الذي يُطلق عليه ملك الغابة؟",
+//         choices: [
+//             { id: "q8a", "number": "A", "answer": "النمر", "correct": false },
+//             { id: "q8b", "number": "B", "answer": "الأسد", "correct": true },
+//             { id: "q8c", "number": "C", "answer": "الدب", "correct": false },
+//             { id: "q8d", "number": "D", "answer": "الفيل", "correct": false }
+//         ]
+//     },
+//     {
+//         id: 9,
+//         question: "ما هو اسم أكبر محيط في العالم؟",
+//         choices: [
+//             { id: "q9a", "number": "A", "answer": "المحيط الهندي", "correct": false },
+//             { id: "q9b", "number": "B", "answer": "المحيط الأطلسي", "correct": false },
+//             { id: "q9c", "number": "C", "answer": "المحيط الهادئ", "correct": true },
+//             { id: "q9d", "number": "D", "answer": "المحيط المتجمد الشمالي", "correct": false }
+//         ]
+//     },
+//     {
+//         id: 10,
+//         question: "ما هو العنصر الأكثر وفرة في القشرة الأرضية؟",
+//         choices: [
+//             { id: "q10a", "number": "A", "answer": "الحديد", "correct": false },
+//             { id: "q10b", "number": "B", "answer": "الأوكسجين", "correct": true },
+//             { id: "q10c", "number": "C", "answer": "السيليكون", "correct": false },
+//             { id: "q10d", "number": "D", "answer": "الكربون", "correct": false }
+//         ]
+//     }
+// ]
+
 // const questions: Question[] = [
 //     {
 //         id: 1,
@@ -224,6 +225,108 @@ const questions: Question[] = [
 //     }
 // ];
 
+const questions: Question[] = [
+    {
+        id: 1,
+        question: "ما هو العنصر الكيميائي الأكثر وفرة في الكون؟",
+        choices: [
+            { id: "q1a", number: "A", answer: "الأكسجين", correct: false },
+            { id: "q1b", number: "B", answer: "الهيدروجين", correct: true },
+            { id: "q1c", number: "C", answer: "الكربون", correct: false },
+            { id: "q1d", number: "D", answer: "النيتروجين", correct: false }
+        ]
+    },
+    {
+        id: 2,
+        question: "أي من الكواكب التالية يمتلك أكبر عدد من الأقمار؟",
+        choices: [
+            { id: "q2a", number: "A", answer: "المشتري", correct: true },
+            { id: "q2b", number: "B", answer: "زحل", correct: false },
+            { id: "q2c", number: "C", answer: "أورانوس", correct: false },
+            { id: "q2d", number: "D", answer: "نبتون", correct: false }
+        ]
+    },
+    {
+        id: 3,
+        question: "أي معدن يُعتبر الأفضل في توصيل الكهرباء؟",
+        choices: [
+            { id: "q3a", number: "A", answer: "النحاس", correct: false },
+            { id: "q3b", number: "B", answer: "الألومنيوم", correct: false },
+            { id: "q3c", number: "C", answer: "الذهب", correct: false },
+            { id: "q3d", number: "D", answer: "الفضة", correct: true }
+        ]
+    },
+    {
+        id: 4,
+        question: "أي من الحيوانات التالية يمكنه العيش لأطول فترة دون ماء؟",
+        choices: [
+            { id: "q4a", number: "A", answer: "الجمل", correct: false },
+            { id: "q4b", number: "B", answer: "السلحفاة", correct: false },
+            { id: "q4c", number: "C", answer: "الجرذ الكنغري", correct: true },
+            { id: "q4d", number: "D", answer: "الثعبان", correct: false }
+        ]
+    },
+    {
+        id: 5,
+        question: "ما هو العضو الوحيد في جسم الإنسان الذي يمكنه التجدد تمامًا؟",
+        choices: [
+            { id: "q5a", number: "A", answer: "الكبد", correct: true },
+            { id: "q5b", number: "B", answer: "القلب", correct: false },
+            { id: "q5c", number: "C", answer: "الرئتان", correct: false },
+            { id: "q5d", number: "D", answer: "الدماغ", correct: false }
+        ]
+    },
+    {
+        id: 6,
+        question: "ما هي الدولة التي لديها أكبر عدد من البراكين النشطة؟",
+        choices: [
+            { id: "q6a", number: "A", answer: "اليابان", correct: false },
+            { id: "q6b", number: "B", answer: "إندونيسيا", correct: true },
+            { id: "q6c", number: "C", answer: "الولايات المتحدة", correct: false },
+            { id: "q6d", number: "D", answer: "إيطاليا", correct: false }
+        ]
+    },
+    {
+        id: 7,
+        question: "ما هو أسرع حيوان على وجه الأرض؟",
+        choices: [
+            { id: "q7a", number: "A", answer: "الفهد", correct: false },
+            { id: "q7b", number: "B", answer: "صقر الشاهين", correct: true },
+            { id: "q7c", number: "C", answer: "الغزال", correct: false },
+            { id: "q7d", number: "D", answer: "الأرنب البري", correct: false }
+        ]
+    },
+    {
+        id: 8,
+        question: "أي من المحيطات هو الأعمق في العالم؟",
+        choices: [
+            { id: "q8a", number: "A", answer: "المحيط الأطلسي", correct: false },
+            { id: "q8b", number: "B", answer: "المحيط الهندي", correct: false },
+            { id: "q8c", number: "C", answer: "المحيط الهادئ", correct: true },
+            { id: "q8d", number: "D", answer: "المحيط المتجمد الشمالي", correct: false }
+        ]
+    },
+    {
+        id: 9,
+        question: "ما هو الحيوان الذي يمتلك أقوى عضة بين جميع الحيوانات؟",
+        choices: [
+            { id: "q9a", number: "A", answer: "التمساح", correct: true },
+            { id: "q9b", number: "B", answer: "القرش الأبيض", correct: false },
+            { id: "q9c", number: "C", answer: "الأسد", correct: false },
+            { id: "q9d", number: "D", answer: "الدب البني", correct: false }
+        ]
+    },
+    {
+        id: 10,
+        question: "ما هو أقوى عظم في جسم الإنسان؟",
+        choices: [
+            { id: "q10a", number: "A", answer: "الجمجمة", correct: false },
+            { id: "q10b", number: "B", answer: "الفخذ", correct: true },
+            { id: "q10c", number: "C", answer: "العمود الفقري", correct: false },
+            { id: "q10d", number: "D", answer: "عظم الكتف", correct: false }
+        ]
+    }
+];
 
 export const QuizApp = () => {
     const [questionIndex, setQuestionIndex] = useState<number>(0);
@@ -257,7 +360,7 @@ export const QuizApp = () => {
                 {finished? 
                 <div className="text-center text-4xl">
                     <h1>Your Final Score is <br/> {score} / {questions.length}</h1>
-                    <button className="bg-emerald-300 text-black rounded-full px-4 py-2 text-lg mt-4" onClick={restartQuiz}>Restart Quize</button>
+                    <button className="bg-emerald-300 text-black rounded-full px-4 py-2 text-lg mt-4">Restart Quize</button>
                     </div>
                  : <Questions buttonColors={buttonColors} questionIndex={questionIndex} setScore={setScore} buttonState={buttonState} setButtonState={setButtonState} />}
                 {!finished && 
@@ -289,7 +392,7 @@ const Questions = ({ buttonColors, questionIndex,setScore,buttonState ,setButton
             if (correct){setScore((prevScore: number) => prevScore + 1)}
         }
     }
-    // hellow from vs codde fddfdf
+
     const { id, question, choices } = questions[questionIndex];
 
     return (
