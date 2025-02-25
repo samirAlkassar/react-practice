@@ -348,7 +348,7 @@ export const QuizApp = () => {
     return (
         <div className="h-[100vh] w-full text-white bg-[linear-gradient(45deg,tomato,orange,tomato)] font-sans flex justify-center flex-col gap-5 items-center p-4 md:p-0">
             <h1 className="text-6xl text-slate-900 font-bold">Quiz App</h1>
-            {selected? <Quiz defecultiy={defecultiy} setDificulty={setDificulty} setSelected={setSelected}< />: 
+            {selected? <Quiz defecultiy={defecultiy} setDificulty={setDificulty} setSelected={setSelected} />: 
             <div className="flex flex-col items-center justify-center">
                 <DefecultyButton onClick={()=>handleDefecultySelection("Easy")}>Easy</DefecultyButton>
                 <DefecultyButton onClick={()=>handleDefecultySelection("Medium")}>Medium</DefecultyButton>
